@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TechBayPortal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="maps_api_key">AIzaSyAwWvl6HQIhb24XOxDnzxrgh-jEBM1pphM</string>
+
+    <string name="str_btn_add">Add Address</string>
+
+    <!--Add Address Fragment-->
+    <string name="str_address_title">Add Address</string>
+    <string name="str_address_btn">Add</string>
+    <string name="str_address_hint_building">Building Name</string>
+    <string name="str_address_hint_apt">Apartment Name</string>
+    <string name="str_address_hint_street">Street Address</string>
+    <string name="str_address_hint_city">City Id</string>
+    <string name="str_address_hint_area">Area Id</string>
+    <string name="str_address_hint_device">Device Id</string>
+    <string name="str_address_device">123</string>
+    <string name="str_address_hint_lang">Lang</string>
+    <string name="str_address_lang">en</string>
+    <string name="str_address_hint_lat">Latitude</string>
+    <string name="str_address_hint_lng">Longitude</string>
+</resources>

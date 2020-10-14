@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.AddAddressFragment">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/layout_toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/dimen_default_margin"
+            android:layout_marginTop="@dimen/dimen_default_margin"
+            android:layout_marginEnd="@dimen/dimen_default_margin"
+            android:layout_marginBottom="@dimen/dimen_default_margin"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toTopOf="@+id/btnAdd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spinnerCities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/spinnerAreas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_default_margin" />
+
+                <EditText
+                    android:id="@+id/etBuilding"
+                    style="@style/StyleAddressFiledNormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_address_hint_building" />
+
+                <EditText
+                    android:id="@+id/etApt"
+                    style="@style/StyleAddressFiledNormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_address_hint_apt" />
+
+                <EditText
+                    android:id="@+id/etStreet"
+                    style="@style/StyleAddressFiledNormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_address_hint_street" />
+
+                <EditText
+                    android:id="@+id/etCity"
+                    style="@style/StyleAddressFieldNotClickable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_address_hint_city" />
+
+                <EditText
+                    android:id="@+id/etArea"
+                    style="@style/StyleAddressFiledNormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_address_hint_area" />
+
+                <EditText
+                    android:id="@+id/etDevice"
+                    style="@style/StyleAddressFieldNotClickable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_address_hint_device"
+                    android:text="@string/str_address_device"/>
+
+                <EditText
+                    android:id="@+id/etLang"
+                    style="@style/StyleAddressFieldNotClickable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_address_hint_lang"
+                    android:text="@string/str_address_lang"/>
+
+                <EditText
+                    android:id="@+id/etLat"
+                    style="@style/StyleAddressFieldNotClickable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_address_hint_lat" />
+
+                <EditText
+                    android:id="@+id/etLng"
+                    style="@style/StyleAddressFieldNotClickable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/str_address_hint_lng" />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_default_margin"
+            android:text="@string/str_address_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

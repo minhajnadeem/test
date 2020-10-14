@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dimen_default_margin">@dimen/_16sdp</dimen>
+    <dimen name="dimen_add_address_margin">@dimen/_8sdp</dimen>
+    <dimen name="dime_title">@dimen/_16sdp</dimen>
+</resources>
